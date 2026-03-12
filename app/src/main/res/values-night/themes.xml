@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- =====================================================
+         TIMA App — Theme Oscuro (Modo Noche)
+         Hereda de Material Design 3 · Dark · No Action Bar.
+         Los colores se leen de values-night/colors.xml.
+         Requiere: com.google.android.material:material:1.11.0
+         ===================================================== -->
+    <style name="Theme.TimaAppMovil" parent="Theme.Material3.Dark.NoActionBar">
+
+        <!-- ── Colores de marca ─────────────────────────── -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+        <item name="colorPrimaryContainer">@color/colorPrimaryVariant</item>
+        <item name="colorOnPrimaryContainer">@color/colorOnPrimary</item>
+
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorOnSecondary">@color/colorOnSecondary</item>
+        <item name="colorSecondaryContainer">@color/colorSecondaryVariant</item>
+        <item name="colorOnSecondaryContainer">@color/colorOnSecondary</item>
+
+        <item name="colorTertiary">@color/colorTertiary</item>
+        <item name="colorOnTertiary">@color/colorOnTertiary</item>
+
+        <!-- ── Superficie y Fondo ───────────────────────── -->
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="colorOnBackground">@color/colorOnBackground</item>
+
+        <item name="colorSurface">@color/colorSurface</item>
+        <item name="colorSurfaceVariant">@color/colorSurfaceVariant</item>
+        <item name="colorOnSurface">@color/colorOnSurface</item>
+        <item name="colorOnSurfaceVariant">@color/colorOnSurfaceVariant</item>
+
+        <!-- ── Error ─────────────────────────────────────── -->
+        <item name="colorError">@color/colorError</item>
+        <item name="colorOnError">@color/colorOnError</item>
+
+        <!-- ── Barras del sistema ─────────────────────────
+             En modo oscuro ambas barras son oscuras;
+             los iconos se muestran en modo claro (false).
+             ─────────────────────────────────────────────── -->
+        <item name="android:statusBarColor">@color/colorStatusBar</item>
+        <item name="android:navigationBarColor">@color/colorNavigationBar</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <!-- ── Tipografía ─────────────────────────────────── -->
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColorPrimary">@color/textPrimary</item>
+        <item name="android:textColorSecondary">@color/textSecondary</item>
+
+        <!-- ── Outline ─────────────────────────────────────── -->
+        <item name="colorOutline">@color/colorOutline</item>
+
+        <!-- ── Ventana ─────────────────────────────────────── -->
+        <item name="android:windowBackground">@color/colorBackground</item>
+
+    </style>
+
+</resources>

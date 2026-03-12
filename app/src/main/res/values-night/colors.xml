@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- =====================================================
+         TIMA App — Overrides de Color para Modo Oscuro
+         Solo se redefinen los tokens que cambian en Dark Mode.
+         El resto se hereda de values/colors.xml
+         ===================================================== -->
+
+    <!-- Primary: se aclara ligeramente para contraste sobre fondo oscuro -->
+    <color name="colorPrimary">#4A7FD4</color>
+    <color name="colorPrimaryVariant">#6B9BE0</color>
+    <color name="colorOnPrimary">#0A1F44</color>
+
+    <!-- Secondary: naranja se mantiene vibrante -->
+    <color name="colorSecondary">#F28C38</color>
+    <color name="colorSecondaryVariant">#E07820</color>
+    <color name="colorOnSecondary">#1A1A1A</color>
+
+    <!-- Tertiary -->
+    <color name="colorTertiary">#3D2C00</color>
+    <color name="colorOnTertiary">#FFDF9F</color>
+
+    <!-- Background oscuro profundo -->
+    <color name="colorBackground">#121212</color>
+    <color name="colorOnBackground">#E8E8E8</color>
+
+    <!-- Surface oscura (un tono por encima del background) -->
+    <color name="colorSurface">#1E1E1E</color>
+    <color name="colorSurfaceVariant">#2C2C2C</color>
+    <color name="colorOnSurface">#E8E8E8</color>
+    <color name="colorOnSurfaceVariant">#9CA3AF</color>
+
+    <!-- Barras del sistema en oscuro -->
+    <color name="colorStatusBar">#0A1020</color>
+    <color name="colorNavigationBar">#1E1E1E</color>
+
+    <!-- Texto -->
+    <color name="textPrimary">#E8E8E8</color>
+    <color name="textSecondary">#9CA3AF</color>
+
+    <!-- Borders / Dividers -->
+    <color name="colorOutline">#374151</color>
+    <color name="colorDivider">#2D3748</color>
+
+    <!-- Cards en modo oscuro -->
+    <color name="colorCardBackground">#1E1E1E</color>
+    <color name="colorCardStroke">#2D3748</color>
+
+</resources>
