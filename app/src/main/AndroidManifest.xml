@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.tima.app">
+    package="co.edu.uniandes.juayedw.tima">
 
     <application
         android:allowBackup="true"
@@ -60,9 +60,40 @@
             android:theme="@style/Theme.TimaAppMovil" />
 
         <activity
-            android:name=".MainActivity"
+            android:name=".ConfigureLocationActivity"
             android:exported="false"
             android:theme="@style/Theme.TimaAppMovil" />
+
+        <activity
+            android:name=".AlarmScheduledActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TimaAppMovil" />
+
+        <activity
+            android:name=".AchievementActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TimaAppMovil" />
+
+        <activity
+            android:name=".ChallengeLoadingActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TimaAppMovil" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TimaAppMovil" />
+
+        <activity
+            android:name=".CloudSyncActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TimaAppMovil" />
+
+        <activity
+            android:name=".SyncCompleteActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TimaAppMovil" />
+
     </application>
 
 </manifest>

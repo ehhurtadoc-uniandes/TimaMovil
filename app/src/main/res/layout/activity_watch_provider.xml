@@ -50,12 +50,15 @@
 
         <!-- Apple -->
         <LinearLayout
+            android:id="@+id/row_apple"
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:orientation="horizontal"
             android:gravity="center_vertical"
             android:paddingHorizontal="4dp"
-            android:background="@color/colorBackground">
+            android:background="@color/colorBackground"
+            android:clickable="true"
+            android:focusable="true">
             <TextView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -77,12 +80,15 @@
 
         <!-- Huawei -->
         <LinearLayout
+            android:id="@+id/row_huawei"
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:orientation="horizontal"
             android:gravity="center_vertical"
             android:paddingHorizontal="4dp"
-            android:background="@color/colorBackground">
+            android:background="@color/colorBackground"
+            android:clickable="true"
+            android:focusable="true">
             <TextView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -104,12 +110,15 @@
 
         <!-- Polar -->
         <LinearLayout
+            android:id="@+id/row_polar"
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:orientation="horizontal"
             android:gravity="center_vertical"
             android:paddingHorizontal="4dp"
-            android:background="@color/colorBackground">
+            android:background="@color/colorBackground"
+            android:clickable="true"
+            android:focusable="true">
             <TextView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -131,12 +140,15 @@
 
         <!-- Samsung -->
         <LinearLayout
+            android:id="@+id/row_samsung"
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:orientation="horizontal"
             android:gravity="center_vertical"
             android:paddingHorizontal="4dp"
-            android:background="@color/colorBackground">
+            android:background="@color/colorBackground"
+            android:clickable="true"
+            android:focusable="true">
             <TextView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -158,12 +170,15 @@
 
         <!-- Garmin -->
         <LinearLayout
+            android:id="@+id/row_garmin"
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:orientation="horizontal"
             android:gravity="center_vertical"
             android:paddingHorizontal="4dp"
-            android:background="@color/colorBackground">
+            android:background="@color/colorBackground"
+            android:clickable="true"
+            android:focusable="true">
             <TextView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -185,16 +200,5 @@
 
     </LinearLayout>
 
-    <!-- Botón Continuar -->
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_continuar"
-        style="@style/TimaButtonPrimary"
-        android:layout_width="0dp"
-        android:layout_height="56dp"
-        android:text="Continuar"
-        android:layout_marginBottom="48dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
