@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- =====================================================
+         TIMA App — Reusable Styles (Material Design 3)
+         Requiere: com.google.android.material:material:1.11.0
+         ===================================================== -->
+
+    <!-- ─── Buttons ──────────────────────────────────────── -->
+
+    <!--
+        TimaButtonPrimary
+        Fondo naranja (#F28C38), texto blanco, esquinas redondeadas 12dp.
+        Ideal para CTAs principales ("Guardar", "Empezar", etc.)
+    -->
+    <style name="TimaButtonPrimary" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">@color/colorSecondary</item>
+        <item name="android:textColor">@color/colorOnSecondary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="cornerRadius">28dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <!--
+        TimaButtonSecondary
+        Fondo azul oscuro (#091F44), texto blanco.
+        Acciones secundarias o de confirmación.
+    -->
+    <style name="TimaButtonSecondary" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorOnPrimary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="cornerRadius">28dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <!--
+        TimaButtonOutlined
+        Sin fondo, borde naranja. Para acciones terciarias.
+    -->
+    <style name="TimaButtonOutlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:textColor">@color/colorSecondary</item>
+        <item name="strokeColor">@color/colorSecondary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+        <item name="android:minHeight">52dp</item>
+        <item name="cornerRadius">12dp</item>
+    </style>
+
+    <!-- ─── Cards ─────────────────────────────────────────── -->
+
+    <!--
+        TimaCard
+        Fondo blanco, esquinas redondeadas 16dp, sombra ligera.
+    -->
+    <style name="TimaCard" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">@color/colorCardBackground</item>
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="contentPadding">16dp</item>
+        <item name="strokeColor">@color/colorCardStroke</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <!--
+        TimaCardFlat
+        Tarjeta sin sombra, solo fondo gris claro. Usada en listas.
+    -->
+    <style name="TimaCardFlat" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">@color/colorSurfaceVariant</item>
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="contentPadding">12dp</item>
+    </style>
+
+    <!-- ─── Typography ────────────────────────────────────── -->
+
+    <!--
+        TimaTextTitle — 22sp, bold, color principal.
+    -->
+    <style name="TimaTextTitle">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing">-0.01</item>
+    </style>
+
+    <!--
+        TimaTextSubtitle — 18sp, semi-bold.
+    -->
+    <style name="TimaTextSubtitle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <!--
+        TimaTextBody — 16sp, normal, interlineado 1.4.
+    -->
+    <style name="TimaTextBody">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:lineSpacingMultiplier">1.4</item>
+    </style>
+
+    <!--
+        TimaTextCaption — 14sp, texto auxiliar en gris.
+    -->
+    <style name="TimaTextCaption">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/textSecondary</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <!--
+        TimaTextLabel — 12sp, etiqueta de formulario.
+    -->
+    <style name="TimaTextLabel">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/textSecondary</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:letterSpacing">0.04</item>
+    </style>
+
+    <!-- ─── Input Fields ──────────────────────────────────── -->
+
+    <!--
+        TimaTextInputLayout — Outlined con esquinas 12dp.
+    -->
+    <style name="TimaTextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+        <item name="boxStrokeColor">@color/colorOutline</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="hintTextColor">@color/textSecondary</item>
+    </style>
+
+    <!-- ─── Toolbar ───────────────────────────────────────── -->
+
+    <!--
+        TimaToolbar — Barra azul oscuro, texto blanco.
+    -->
+    <style name="TimaToolbar" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="titleTextColor">@color/colorOnPrimary</item>
+        <item name="subtitleTextColor">@color/colorOnPrimary</item>
+    </style>
+
+    <!-- ─── Bottom Navigation ─────────────────────────────── -->
+
+    <!--
+        TimaBottomNav — Indicador activo naranja claro.
+    -->
+    <style name="TimaBottomNav" parent="Widget.Material3.BottomNavigationView">
+        <item name="android:background">@color/colorSurface</item>
+        <item name="itemIconTint">@color/colorPrimary</item>
+        <item name="itemTextColor">@color/colorPrimary</item>
+    </style>
+
+</resources>
