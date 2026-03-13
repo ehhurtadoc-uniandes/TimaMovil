@@ -4,6 +4,11 @@ TIMA es una aplicación Android de alarmas inteligentes orientada al ejercicio. 
 
 El proyecto es el resultado de un proceso de diseño centrado en el usuario dentro del marco de la Maestría en Ingeniería de Software de la Universidad de los Andes. Este repositorio contiene la implementación del prototipo funcional de alta fidelidad basado en los mockups propuestos.
 
+## Diseño
+
+Los mockups y el design system están en Figma:
+https://www.figma.com/design/Q9S1zuZBzFoge33RfSjd96/Design-kit---Design-System---TIMA?node-id=60994-1045&p=f&t=dIgwHyfrQOobxGU4-0
+
 ## APK
 
 El instalador está disponible en:
