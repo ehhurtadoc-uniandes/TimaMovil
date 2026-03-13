@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="co.edu.uniandes.juayedw.tima">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TimaAppMovil">
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.TimaAppMovil">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SyncWatchActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TimaAppMovil" />
+
+        <activity
+            android:name=".WatchProviderActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TimaAppMovil" />
+
+        <activity
+            android:name=".SyncingWatchActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TimaAppMovil" />
+
+        <activity
+            android:name=".WatchSyncedActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TimaAppMovil" />
+
+        <activity
+            android:name=".CreateAlarmActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TimaAppMovil" />
+
+        <activity
+            android:name=".CreateChallengeActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TimaAppMovil" />
+
+        <activity
+            android:name=".ExerciseTypeActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TimaAppMovil" />
+
+        <activity
+            android:name=".HeartRateActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TimaAppMovil" />
+
+        <activity
+            android:name=".ConfigureLocationActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TimaAppMovil" />
+
+        <activity
+            android:name=".AlarmScheduledActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TimaAppMovil" />
+
+        <activity
+            android:name=".AchievementActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TimaAppMovil" />
+
+        <activity
+            android:name=".ChallengeLoadingActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TimaAppMovil" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TimaAppMovil" />
+
+        <activity
+            android:name=".CloudSyncActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TimaAppMovil" />
+
+        <activity
+            android:name=".SyncCompleteActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TimaAppMovil" />
+
+    </application>
+
+</manifest>

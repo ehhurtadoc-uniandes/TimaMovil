@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:paddingHorizontal="32dp">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Sincronizar reloj"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Subtítulo -->
+    <TextView
+        android:id="@+id/tv_subtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Elige el proveedor de tu smartwatch para continuar"
+        android:textSize="17sp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:lineSpacingMultiplier="1.3"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Lista de proveedores -->
+    <LinearLayout
+        android:id="@+id/list_providers"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="48dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_subtitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Apple -->
+        <LinearLayout
+            android:id="@+id/row_apple"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="4dp"
+            android:background="@color/colorBackground"
+            android:clickable="true"
+            android:focusable="true">
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="A"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@drawable/circle_avatar" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apple"
+                android:textSize="16sp"
+                android:textColor="@color/colorOnBackground"
+                android:layout_marginStart="16dp" />
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/colorDivider" />
+
+        <!-- Huawei -->
+        <LinearLayout
+            android:id="@+id/row_huawei"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="4dp"
+            android:background="@color/colorBackground"
+            android:clickable="true"
+            android:focusable="true">
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="H"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@drawable/circle_avatar" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Huawei"
+                android:textSize="16sp"
+                android:textColor="@color/colorOnBackground"
+                android:layout_marginStart="16dp" />
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/colorDivider" />
+
+        <!-- Polar -->
+        <LinearLayout
+            android:id="@+id/row_polar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="4dp"
+            android:background="@color/colorBackground"
+            android:clickable="true"
+            android:focusable="true">
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="P"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@drawable/circle_avatar" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Polar"
+                android:textSize="16sp"
+                android:textColor="@color/colorOnBackground"
+                android:layout_marginStart="16dp" />
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/colorDivider" />
+
+        <!-- Samsung -->
+        <LinearLayout
+            android:id="@+id/row_samsung"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="4dp"
+            android:background="@color/colorBackground"
+            android:clickable="true"
+            android:focusable="true">
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="S"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@drawable/circle_avatar" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Samsung"
+                android:textSize="16sp"
+                android:textColor="@color/colorOnBackground"
+                android:layout_marginStart="16dp" />
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/colorDivider" />
+
+        <!-- Garmin -->
+        <LinearLayout
+            android:id="@+id/row_garmin"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="4dp"
+            android:background="@color/colorBackground"
+            android:clickable="true"
+            android:focusable="true">
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="G"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@drawable/circle_avatar" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Garmin"
+                android:textSize="16sp"
+                android:textColor="@color/colorOnBackground"
+                android:layout_marginStart="16dp" />
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/colorDivider" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

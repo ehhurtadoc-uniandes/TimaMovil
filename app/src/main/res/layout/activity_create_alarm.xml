@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:paddingHorizontal="32dp">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Crear alarma"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Selector de hora — toca para abrir TimePickerDialog -->
+    <LinearLayout
+        android:id="@+id/time_picker_container"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/bg_time_container"
+        android:padding="12dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Hora -->
+        <TextView
+            android:id="@+id/tv_hour"
+            android:layout_width="72dp"
+            android:layout_height="match_parent"
+            android:text="07"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:background="@drawable/bg_time_digit" />
+
+        <!-- Separador -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=" : "
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:paddingHorizontal="8dp" />
+
+        <!-- Minutos -->
+        <TextView
+            android:id="@+id/tv_minute"
+            android:layout_width="72dp"
+            android:layout_height="match_parent"
+            android:text="30"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center" />
+
+        <!-- AM / PM -->
+        <LinearLayout
+            android:layout_width="52dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginStart="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="AM"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:background="@drawable/bg_ampm_selected" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="PM"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorSecondary"
+                android:gravity="center"
+                android:layout_marginTop="4dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Fila Sonido -->
+    <LinearLayout
+        android:id="@+id/row_sound"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@id/time_picker_container"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sonido"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/bg_option_outline"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="8dp"
+            android:gravity="center"
+            android:layout_marginEnd="16dp"
+            android:layout_gravity="center_vertical" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switch_sound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            app:thumbTint="@color/colorOnPrimary"
+            app:trackTint="@color/colorPrimary" />
+
+    </LinearLayout>
+
+    <!-- Divisor -->
+    <View
+        android:id="@+id/divider_sound"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/colorDivider"
+        app:layout_constraintTop_toBottomOf="@id/row_sound"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Fila Vibración -->
+    <LinearLayout
+        android:id="@+id/row_vibration"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@id/divider_sound"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Vibración"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/bg_option_outline"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="8dp"
+            android:gravity="center"
+            android:layout_marginEnd="16dp"
+            android:layout_gravity="center_vertical" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switch_vibration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            app:thumbTint="@color/colorOnPrimary"
+            app:trackTint="@color/colorPrimary" />
+
+    </LinearLayout>
+
+    <!-- Botón Continuar -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_continuar"
+        style="@style/TimaButtonPrimary"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:text="Continuar"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

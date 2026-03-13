@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:paddingHorizontal="32dp">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Frecuencia cardiaca"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Campo Frecuencia cardiaca principal -->
+    <LinearLayout
+        android:id="@+id/container_bpm_main"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_option_outline"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Frecuencia Cardíaca"
+            android:textSize="12sp"
+            android:textColor="@color/textSecondary" />
+
+        <EditText
+            android:id="@+id/et_bpm_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="150"
+            android:textSize="32sp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:inputType="number"
+            android:background="@null"
+            android:padding="0dp"
+            android:layout_marginTop="2dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="bpm"
+            android:textSize="14sp"
+            android:textColor="@color/textSecondary"
+            android:layout_marginTop="2dp" />
+
+    </LinearLayout>
+
+    <!-- Sección "Con control de paso" -->
+    <TextView
+        android:id="@+id/tv_section_pace"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Con control de paso"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@id/container_bpm_main"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Campo frecuencia con controles +/- -->
+    <LinearLayout
+        android:id="@+id/row_bpm_pace"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_section_pace"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Input con bpm -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_option_outline"
+            android:paddingHorizontal="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Frecuencia cardíaca"
+                    android:textSize="12sp"
+                    android:textColor="@color/textSecondary" />
+
+                <EditText
+                    android:id="@+id/et_bpm_pace"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="120"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:inputType="number"
+                    android:background="@null"
+                    android:padding="0dp"
+                    android:layout_marginTop="2dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="bpm"
+                android:textSize="14sp"
+                android:textColor="@color/textSecondary"
+                android:layout_marginStart="8dp" />
+
+        </LinearLayout>
+
+        <!-- Botón menos -->
+        <TextView
+            android:id="@+id/btn_menos"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="−"
+            android:textSize="24sp"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/bg_option_outline" />
+
+        <!-- Botón más -->
+        <TextView
+            android:id="@+id/btn_mas"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="+"
+            android:textSize="24sp"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bg_option_outline" />
+
+    </LinearLayout>
+
+    <!-- Botón Guardar -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_guardar"
+        style="@style/TimaButtonPrimary"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:text="Guardar"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
